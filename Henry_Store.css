@@ -1,0 +1,38 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: EngraversGothicW01;
+    font-weight: 500;
+}
+
+.header_top {
+    background-color: #151F6D;
+    color: white;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    z-index: 20;
+    height: 30px;
+}
+
+    .header_top ul li {
+        font-weight: 700;
+        color: white;
+        font-family: Montserrat;
+        text-shadow: 0 0 12px rgba(255, 255, 255, 1);
+        list-style: none;
+        cursor: pointer;
+    }

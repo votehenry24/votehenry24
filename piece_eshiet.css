@@ -1,0 +1,218 @@
+﻿.icon_cont {
+    margin-left: 5px;
+}
+
+    .icon_cont i {
+        font-size: 16px;
+    }
+
+nav {
+    background-color: #FFF;
+    z-index: 80;
+    transition: opacity 0.3s ease;
+    width: 100%;
+}
+
+    nav ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 20;
+    }
+
+    nav li {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 10px;
+        height: 90px;
+        transition: height 0.3s ease-out;
+    }
+
+        nav li:last-child {
+            padding-right: 36px;
+        }
+
+        nav li img {
+            transition: all 0.3s linear;
+            padding-left: 23px;
+        }
+
+    nav a {
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #273B5D;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: Montserrat, sans-serif;
+    }
+
+    nav li:first-child {
+        margin-right: auto;
+    }
+
+.espanol_button {
+    background-color: #D23A30;
+    height: 40px;
+    color: white;
+    border-radius: 0.25rem;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+
+    .espanol_button:hover {
+        border: 2px solid;
+        border-color: #D23A30;
+        background-color: #fff;
+        color: #D23A30;
+        box-sizing: border-box;
+    }
+
+.fa-caret-right {
+    transition: transform 0.15s ease-in-out; /*ICON TRANSITIONNN*/
+}
+
+.main_nav li:hover .fa-caret-right {
+    transform: rotate(90deg);
+}
+
+
+nav ul.submenu2 {
+    position: absolute;
+    width: 0px;
+    background-color: #fff;
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,.10);
+    margin-top: 235px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 0px;
+    padding-left: 16px;
+}
+
+
+.main_nav .dropdowns:hover .submenu2 {
+    margin-top: 249px;
+    opacity: 1;
+    z-index: 99;
+    height: 200px;
+    width: 230px;
+    transition: opacity 0.24s, margin-top ease-out 0.4s;
+}
+
+.main_nav li .submenu2 {
+    transition: opacity 0.24s, margin-top ease-out 0.4s;
+}
+
+    .main_nav li .submenu2 li a:hover {
+        color: #EB1F25;
+        transition: color 0.3s ease;
+    }
+
+    .main_nav li .submenu2 li a {
+        transition: color 0.3s ease;
+        font-size: 0px;
+    }
+
+.main_nav .dropdowns:hover .submenu2 li a {
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+nav ul.submenu {
+    position: absolute;
+    width: 0px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
+    margin-top: 196px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 0px;
+    padding-left: 16px;
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,.10);
+}
+
+
+.main_nav .dropdowns:hover .submenu {
+    margin-top: 210px;
+    opacity: 1;
+    z-index: 99;
+    height: 150px;
+    width: 200px;
+    transition: opacity 0.24s, margin-top ease-out 0.4s;
+}
+
+.main_nav li .submenu {
+    transition: opacity 0.24s, margin-top ease-out 0.4s;
+}
+
+    .main_nav li .submenu li a:hover {
+        color: #EB1F25;
+        transition: color 0.3s ease;
+    }
+
+    .main_nav li .submenu li a {
+        transition: color 0.3s ease;
+        font-size: 0px;
+    }
+
+.main_nav .dropdowns:hover .submenu li a {
+    font-size: 15px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    opacity: 1;
+    /*box-shadow: 0 2px 2px rgba(0, 0, 0, .2);*/
+}
+
+    nav.sticky li {
+        height: 60px;
+        z-index: 1001;
+    }
+
+        nav.sticky li img {
+            width: 105px;
+            height: 42px;
+            padding-left: 25px;
+        }
+
+nav a:hover {
+    color: #D23A30;
+    transition: color 0.3s ease;
+}
+
+nav a {
+    transition: color 0.3s ease;
+}

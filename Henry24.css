@@ -1,0 +1,129 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.header_top {
+    background: rgb(200, 15, 43);
+    align-items: center;
+    justify-content: center;
+}
+
+    .header_top ul {
+        padding: 0;
+        margin: 0;
+    }
+
+        .header_top ul li {
+            font-weight: 700;
+            color: white;
+            font-family: Montserrat;
+            text-shadow: 0 0 12px rgba(255, 255, 255, 1);
+            list-style: none;
+            padding: 10px;
+            justify-content: center;
+            align-self: center;
+            display: flex;
+        }
+
+.header_bottom {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0.1rem 0.5rem #dee2e6;
+    transition: height 0.3s;
+    align-items: center;
+    height: 80px;
+    display: flex;
+}
+
+.main_nav {
+    text-align: right;
+    padding-right: 16px;
+    font-family: EngraversGothicW01;
+    height: 65px;
+    align-items: center;
+    font-size: 22px;
+}
+
+    .main_nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline;
+    }
+
+        .main_nav ul li {
+            margin-right: 10px;
+            height: 100%;
+        }
+
+.header_bottom.main_nav ul li img {
+    align-items: center;
+    height: 95px;
+}
+
+            .main_nav ul li a {
+                padding: 0 20px;
+                text-decoration: none;
+                display: flex;
+                color: #00324D;
+                font-size: 25px;
+            }
+
+.header_bottom.shrinked {
+    height: 95px;
+    transition: 0.3s;
+    background-color: white;
+    align-items: center;
+    text-align: right;
+}
+
+    
+
+    .header_bottom.shrinked .main_nav {
+        text-align: right;
+        padding-right: 16px;
+        font-family: EngraversGothicW01;
+        height: 65px;
+        align-items: center;
+        font-size: 22px;
+        display: flex;
+    }
+
+    .header_bottom.shrinked .main_nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline;
+    }
+
+        .header_bottom.shrinked .main_nav ul li img {
+            padding-left: 15px;
+            align-items: center;
+            width: 95px;
+        }
+
+        .header_bottom.shrinked .main_nav ul li.logo {
+            margin-right: auto;
+        }
+
+        .header_bottom.shrinked .main_nav ul li a {
+            padding: 0 20px;
+            text-decoration: none;
+            display: flex;
+            color: #00324D;
+            font-size: 25px;
+        }
+
+.nothing {
+    height: 100vh;
+    background-color: white;
+}

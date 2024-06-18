@@ -1,0 +1,211 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: EngraversGothicW01;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.icon_cont {
+    margin-left: 5px;
+}
+
+.icon_cont i {
+    font-size: 16px;
+}
+
+nav {
+    background-color: #DA1333;
+    color: white;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+
+nav ul li {
+    list-style: none;
+}
+
+
+
+nava {
+    background-color: white;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    transition: opacity 0.3s ease;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+    top: 24px;
+}
+
+    nava ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nava li {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 10px;
+        height: 62px;
+    }
+
+    nava a {
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #00324D;
+        font-size: 25px;
+    }
+
+        nava a:hover {
+            background-color: #f0f0f0;
+        }
+
+    nava li:first-child {
+        margin-right: auto;
+    }
+
+
+.espanol-button {
+    border-radius: 9999px;
+    border-width: 2px;
+    color: white;
+    background-color: #DA1333;
+    border-color: #DA1333;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+    width: 50px;
+    height: 20px;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .espanol-button:hover {
+        background-color: #A70101;
+        transition: 0.5s;
+    }
+
+footer {
+    background-color: #213875;
+}
+
+.footContainer {
+    width: 100%;
+    padding: 20px 20px 20px;
+    justify-content: center;
+    color: white;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+    .socialIcons a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 50%;
+        justify-content: center;
+    }
+
+        .socialIcons a i {
+            font-size: 2em;
+            color: black;
+            opacity: 0.9;
+            justify-content: center;
+        }
+
+        .socialIcons a:hover i {
+            color: white;
+            transition: 0.5s;
+        }
+
+        .socialIcons a:hover {
+            background-color: black;
+            transition: 0.5s;
+        }
+
+
+    .footerNav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+        .footerNav ul li a {
+            color: white;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 1.3em;
+        }
+
+    .footerNav a:hover {
+        color: black;
+    }
+
+
+.footerBottom {
+    background-color: #F5F6F8;
+    padding: 20px;
+    text-align: center;
+    color: #00324D;
+}
+
+    .footerBottom ul {
+        list-style: none;
+        justify-content: right;
+    }
+
+        .footerBottom ul li a {
+            color: #00324D;
+            text-decoration: none;
+            display: inline-block;
+            border: 1px solid #ADB5BD;
+            font-family: Montserrat;
+        }
+
+section {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("C:/Users/chris/Downloads/photo-1464660756002-dd9f9a92b01b.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}

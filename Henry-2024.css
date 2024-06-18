@@ -1,0 +1,186 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: EngraversGothicW01;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.icon_cont {
+    margin-left: 5px;
+}
+
+    .icon_cont i {
+        font-size: 16px;
+    }
+
+nav {
+    background-color: #DA1333;
+    color: white;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+    nav ul li {
+        list-style: none;
+    }
+
+
+
+.logo {
+    width: 120px;
+    margin-top: 8px;
+}
+
+nav.logo {
+    display: none;
+}
+
+nava {
+    background-color: white;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    transition: opacity 0.3s ease;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+    top: 24px;
+}
+
+
+    nava ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nava li {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 10px;
+        height: 62px;
+    }
+
+    nava a {
+        height: 100%;
+        padding: 0 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #00324D;
+        font-size: 25px;
+    }
+
+        nava a:hover {
+            background-color: #f0f0f0;
+        }
+
+
+
+
+.espanol-button {
+    border-radius: 9999px;
+    border-width: 2px;
+    color: white;
+    background-color: #DA1333;
+    border-color: #DA1333;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+    width: 50px;
+    height: 20px;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .espanol-button:hover {
+        background-color: #A70101;
+        transition: 0.5s;
+    }
+
+nava ul li a.active{
+
+}
+
+.hamburger{
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.hamburger:hover{
+    background-color: #f0f0f0;
+}
+
+.hamburger div{
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+}
+
+@media only screen and (max-width: 1100px){
+    nava{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        background: #fefefe;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    nava.logo{
+        display: block;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    nava ul{
+        display: block;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+
+    .espanol-button {
+        display: block;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+
+    .hamburger{
+        display: block;
+
+    }
+}

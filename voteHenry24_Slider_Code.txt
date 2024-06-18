@@ -1,0 +1,98 @@
+
+
+/******   HTML    ******/
+
+<div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img class="eagles" src="Captura de pantalla (228).png" alt="" />
+            </div>
+            <div class="slide">
+                <img class="cheer" src="Captura de pantalla (171).png" alt="" />
+            </div>
+            <div class="slide">
+                <img class="news" src="Captura de pantalla (216).png" alt="" />
+            </div>
+            <div class="slide">
+                <img class="senate" src="Captura de pantalla (153).png" alt="" />
+            </div>
+            <div class="slide">
+
+            </div>
+            <div class="slide">
+                <img class="eagles" src="Captura de pantalla (228).png" alt="" />
+            </div>
+            <div class="slide">
+                <img class="cheer" src="Captura de pantalla (171).png" alt="" />
+            </div>
+            <div class="slide">
+                <img class="news" src="Captura de pantalla (216).png" alt="" />
+            </div>
+            <div class="slide">
+                <img class="senate" src="Captura de pantalla (153).png" alt="" />
+            </div>
+
+        </div>
+    </div>
+
+
+
+/******   CSS    ******/
+
+
+.slider{
+    width: 75vw;
+    height: 120px;
+    margin: auto;
+    overflow: hidden;
+}
+
+    .slider .slide-track {
+        display: flex;
+        animation: scroll 15s linear infinite;
+        -webkit-animation: scroll 30s linear infinite;
+        width: calc(200px * 7)
+    }
+
+    .slider .slide {
+        width: 150px;
+        object-fit: cover;
+    }
+
+        .slider .slide img {
+            width: 100%;
+            height: 120px;
+        }
+
+        .slider .slide .news {
+            height: 90px;
+            width: 310px;
+            padding-top: 15px;
+            padding-left: 40px;
+        }
+        .slider .slide .cheer {
+            width: 120px;
+            padding-left: 40px;
+        }
+
+        .slider .slide .senate {
+            height: 110px;
+            width: 120px;
+            padding-left: 210px;
+        }
+
+        .slider .slide .eagles {
+            padding-left: 40px;
+            width: 150px;
+        }
+
+    @keyframes scroll {
+        0%{
+            -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+        }
+        100% {
+            -webkit-transform: translateX(calc(-200px * 2));
+            transform: translateX(calc(-200px * 2));
+        }
+    }
